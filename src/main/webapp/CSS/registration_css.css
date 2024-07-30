@@ -1,0 +1,279 @@
+ /*@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+/*  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;*/
+ background-color: #F3EBF6;
+}
+.wrapper{
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  
+  background-color: #FFFFFF;
+        width: 400px;
+        /*height: 400px;*/
+        /*margin: 7em auto;*/
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  
+  
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+.wrapper form{
+  margin-top: 30px;
+}
+.wrapper form .input-box{
+  height: 42px;
+  margin: 18px 0;
+}
+form .input-box input{
+/*  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;*/
+  
+  
+  width: 96%;
+  /*height: 100%;*/
+  /*width: 100%;*/
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    /*margin-left: 46px;*/
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.input-box input:focus,
+.input-box input:valid{
+  border-color: #4070f4;
+}
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #0e4bf1;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+label {
+	/*display: flex;*/
+	cursor: pointer;
+	font-weight: 500;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0.375em;
+	
+	input {
+		position: absolute;
+		left: -9999px;
+		&:checked + span {
+			background-color: mix(#fff, #00005c, 84%);
+			&:before {
+				box-shadow: inset 0 0 0 0.4375em #00005c;
+			}
+		}
+	}
+	span {
+		display: flex;
+		align-items: center;
+		padding: 0.375em 0.75em 0.375em 0.375em;
+		border-radius: 99em; 
+		transition: 0.25s ease;
+		&:hover {
+			background-color: mix(#fff, #00005c, 84%);
+		}
+		&:before {
+			display: flex;
+			flex-shrink: 0;
+			content: "";
+			background-color: #fff;
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			margin-right: 0.375em;
+			transition: 0.25s ease;
+			box-shadow: inset 0 0 0 0.125em #00005c;
+		}
+	}
+}
+
+
+
+
+
+
+  .checkbox-wrapper-34 {
+    --blue: #0D7EFF;
+    --g08: #E1E5EB;
+    --g04: #848ea1;
+  }
+
+  .checkbox-wrapper-34 .tgl {
+    display: none;
+  }
+  .checkbox-wrapper-34 .tgl,
+  .checkbox-wrapper-34 .tgl:after,
+  .checkbox-wrapper-34 .tgl:before,
+  .checkbox-wrapper-34 .tgl *,
+  .checkbox-wrapper-34 .tgl *:after,
+  .checkbox-wrapper-34 .tgl *:before,
+  .checkbox-wrapper-34 .tgl + .tgl-btn {
+    box-sizing: border-box;
+  }
+  .checkbox-wrapper-34 .tgl::selection,
+  .checkbox-wrapper-34 .tgl:after::selection,
+  .checkbox-wrapper-34 .tgl:before::selection,
+  .checkbox-wrapper-34 .tgl *::selection,
+  .checkbox-wrapper-34 .tgl *:after::selection,
+  .checkbox-wrapper-34 .tgl *:before::selection,
+  .checkbox-wrapper-34 .tgl + .tgl-btn::selection {
+    background: none;
+  }
+  .checkbox-wrapper-34 .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 57px;
+    height: 27px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .checkbox-wrapper-34 .tgl + .tgl-btn:after,
+  .checkbox-wrapper-34 .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 44%;
+    height: 100%;
+  }
+  .checkbox-wrapper-34 .tgl + .tgl-btn:after {
+    left: 0;
+  }
+  .checkbox-wrapper-34 .tgl + .tgl-btn:before {
+    display: inline;
+    position: absolute;
+    top: 7px;
+  }
+  .checkbox-wrapper-34 .tgl:checked + .tgl-btn:after {
+    left: 56.5%;
+  }
+
+  .checkbox-wrapper-34 .tgl-ios + .tgl-btn {
+    background: var(--g08);
+    border-radius: 20rem;
+    padding: 2px;
+    transition: all 0.4s ease;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  }
+  .checkbox-wrapper-34 .tgl-ios + .tgl-btn:after {
+    border-radius: 2em;
+    background: #fff;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .checkbox-wrapper-34 .tgl-ios + .tgl-btn:before {
+    content: "No";
+    left: 28px;
+    color: var(--g04);
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active {
+    box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  .checkbox-wrapper-34 .tgl-ios + .tgl-btn:active:after {
+    padding-right: 0.4em;
+  }
+  .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn {
+    background: var(--blue);
+  }
+  .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active {
+    box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:active:after {
+    margin-left: -0.4em;
+  }
+  .checkbox-wrapper-34 .tgl-ios:checked + .tgl-btn:before {
+    content: "Yes";
+    left: 4px;
+    color: #fff;
+  }
+
